@@ -783,6 +783,10 @@ video {
   background-image: url('../images/bg-hero-desktop.svg');
 }
 
+.bg-\[url\(\'\.\/images\/bg-hero-desktop\.svg\'\)\] {
+  background-image: url('./images/bg-hero-desktop.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
