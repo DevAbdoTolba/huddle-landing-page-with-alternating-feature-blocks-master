@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg  shadow-lg  flex flex-row justify-between items-center max-sm:gap-5 md:gap-40 px-[10ch] py-[1ch] max-sm:flex-col-reverse max-md:text-center;
+    & img {
+      @apply max-md:object-contain aspect-square bg-center w-[50vw];
+    }
+    & > .card__content > .card__title {
+      @apply text-[2rem] max-sm:text-[2.5ch]  font-bold;
+    }
+    & > .card__content {
+      @apply basis-1/2 max-sm:max-w-[80vw] max-sm:min-w-[45vw];
+      & > p {
+        @apply text-[1.5rem] max-sm:text-[1.5ch]  text-gray-500 ;
+      }
+    }
+    & > .card__image {
+      @apply basis-1/2;
+    }
+
+    & h2 {
+      @apply mb-4;
+    }
+  }
+  .card-reverse {
+    @apply md:flex-row-reverse;
+  }
+}
